@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15936521189E0D1800029BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936520189E0D1800029BFD /* Foundation.framework */; };
+		15936523189E0D1800029BFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936522189E0D1800029BFD /* CoreGraphics.framework */; };
+		15936525189E0D1800029BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936524189E0D1800029BFD /* UIKit.framework */; };
+		1593652B189E0D1800029BFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15936529189E0D1800029BFD /* InfoPlist.strings */; };
+		1593652D189E0D1800029BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1593652C189E0D1800029BFD /* main.m */; };
+		15936531189E0D1800029BFD /* AJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15936530189E0D1800029BFD /* AJAppDelegate.m */; };
+		15936533189E0D1800029BFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15936532189E0D1800029BFD /* Images.xcassets */; };
+		1593653A189E0D1900029BFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936539189E0D1900029BFD /* XCTest.framework */; };
+		1593653B189E0D1900029BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936520189E0D1800029BFD /* Foundation.framework */; };
+		1593653C189E0D1900029BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936524189E0D1800029BFD /* UIKit.framework */; };
+		15936544189E0D1900029BFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15936542189E0D1900029BFD /* InfoPlist.strings */; };
+		15936546189E0D1900029BFD /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15936545189E0D1900029BFD /* RibbitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1593653D189E0D1900029BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15936515189E0D1800029BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1593651C189E0D1800029BFD;
+			remoteInfo = Ribbit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1593651D189E0D1800029BFD /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15936520189E0D1800029BFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15936522189E0D1800029BFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15936524189E0D1800029BFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15936528189E0D1800029BFD /* Ribbit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ribbit-Info.plist"; sourceTree = "<group>"; };
+		1593652A189E0D1800029BFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1593652C189E0D1800029BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1593652E189E0D1800029BFD /* Ribbit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ribbit-Prefix.pch"; sourceTree = "<group>"; };
+		1593652F189E0D1800029BFD /* AJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJAppDelegate.h; sourceTree = "<group>"; };
+		15936530189E0D1800029BFD /* AJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJAppDelegate.m; sourceTree = "<group>"; };
+		15936532189E0D1800029BFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15936538189E0D1900029BFD /* RibbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15936539189E0D1900029BFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		15936541189E0D1900029BFD /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
+		15936543189E0D1900029BFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15936545189E0D1900029BFD /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1593651A189E0D1800029BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15936523189E0D1800029BFD /* CoreGraphics.framework in Frameworks */,
+				15936525189E0D1800029BFD /* UIKit.framework in Frameworks */,
+				15936521189E0D1800029BFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15936535189E0D1900029BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1593653A189E0D1900029BFD /* XCTest.framework in Frameworks */,
+				1593653C189E0D1900029BFD /* UIKit.framework in Frameworks */,
+				1593653B189E0D1900029BFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15936514189E0D1800029BFD = {
+			isa = PBXGroup;
+			children = (
+				15936526189E0D1800029BFD /* Ribbit */,
+				1593653F189E0D1900029BFD /* RibbitTests */,
+				1593651F189E0D1800029BFD /* Frameworks */,
+				1593651E189E0D1800029BFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1593651E189E0D1800029BFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1593651D189E0D1800029BFD /* Ribbit.app */,
+				15936538189E0D1900029BFD /* RibbitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1593651F189E0D1800029BFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15936520189E0D1800029BFD /* Foundation.framework */,
+				15936522189E0D1800029BFD /* CoreGraphics.framework */,
+				15936524189E0D1800029BFD /* UIKit.framework */,
+				15936539189E0D1900029BFD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15936526189E0D1800029BFD /* Ribbit */ = {
+			isa = PBXGroup;
+			children = (
+				1593652F189E0D1800029BFD /* AJAppDelegate.h */,
+				15936530189E0D1800029BFD /* AJAppDelegate.m */,
+				15936532189E0D1800029BFD /* Images.xcassets */,
+				15936527189E0D1800029BFD /* Supporting Files */,
+			);
+			path = Ribbit;
+			sourceTree = "<group>";
+		};
+		15936527189E0D1800029BFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15936528189E0D1800029BFD /* Ribbit-Info.plist */,
+				15936529189E0D1800029BFD /* InfoPlist.strings */,
+				1593652C189E0D1800029BFD /* main.m */,
+				1593652E189E0D1800029BFD /* Ribbit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1593653F189E0D1900029BFD /* RibbitTests */ = {
+			isa = PBXGroup;
+			children = (
+				15936545189E0D1900029BFD /* RibbitTests.m */,
+				15936540189E0D1900029BFD /* Supporting Files */,
+			);
+			path = RibbitTests;
+			sourceTree = "<group>";
+		};
+		15936540189E0D1900029BFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15936541189E0D1900029BFD /* RibbitTests-Info.plist */,
+				15936542189E0D1900029BFD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1593651C189E0D1800029BFD /* Ribbit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15936549189E0D1900029BFD /* Build configuration list for PBXNativeTarget "Ribbit" */;
+			buildPhases = (
+				15936519189E0D1800029BFD /* Sources */,
+				1593651A189E0D1800029BFD /* Frameworks */,
+				1593651B189E0D1800029BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ribbit;
+			productName = Ribbit;
+			productReference = 1593651D189E0D1800029BFD /* Ribbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15936537189E0D1900029BFD /* RibbitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1593654C189E0D1900029BFD /* Build configuration list for PBXNativeTarget "RibbitTests" */;
+			buildPhases = (
+				15936534189E0D1900029BFD /* Sources */,
+				15936535189E0D1900029BFD /* Frameworks */,
+				15936536189E0D1900029BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1593653E189E0D1900029BFD /* PBXTargetDependency */,
+			);
+			name = RibbitTests;
+			productName = RibbitTests;
+			productReference = 15936538189E0D1900029BFD /* RibbitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15936515189E0D1800029BFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AJ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alberto Jauregui";
+				TargetAttributes = {
+					15936537189E0D1900029BFD = {
+						TestTargetID = 1593651C189E0D1800029BFD;
+					};
+				};
+			};
+			buildConfigurationList = 15936518189E0D1800029BFD /* Build configuration list for PBXProject "Ribbit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 15936514189E0D1800029BFD;
+			productRefGroup = 1593651E189E0D1800029BFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1593651C189E0D1800029BFD /* Ribbit */,
+				15936537189E0D1900029BFD /* RibbitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1593651B189E0D1800029BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1593652B189E0D1800029BFD /* InfoPlist.strings in Resources */,
+				15936533189E0D1800029BFD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15936536189E0D1900029BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15936544189E0D1900029BFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15936519189E0D1800029BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1593652D189E0D1800029BFD /* main.m in Sources */,
+				15936531189E0D1800029BFD /* AJAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15936534189E0D1900029BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15936546189E0D1900029BFD /* RibbitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1593653E189E0D1900029BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1593651C189E0D1800029BFD /* Ribbit */;
+			targetProxy = 1593653D189E0D1900029BFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15936529189E0D1800029BFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1593652A189E0D1800029BFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		15936542189E0D1900029BFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15936543189E0D1900029BFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15936547189E0D1900029BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15936548189E0D1900029BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1593654A189E0D1900029BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1593654B189E0D1900029BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1593654D189E0D1900029BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ribbit.app/Ribbit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RibbitTests/RibbitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1593654E189E0D1900029BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ribbit.app/Ribbit";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
+				INFOPLIST_FILE = "RibbitTests/RibbitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15936518189E0D1800029BFD /* Build configuration list for PBXProject "Ribbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15936547189E0D1900029BFD /* Debug */,
+				15936548189E0D1900029BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15936549189E0D1900029BFD /* Build configuration list for PBXNativeTarget "Ribbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1593654A189E0D1900029BFD /* Debug */,
+				1593654B189E0D1900029BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1593654C189E0D1900029BFD /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1593654D189E0D1900029BFD /* Debug */,
+				1593654E189E0D1900029BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15936515189E0D1800029BFD /* Project object */;
+}
