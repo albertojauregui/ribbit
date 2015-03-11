@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface AJFriendsViewController : UITableViewController
+
+@property (nonatomic, strong) PFRelation *friendsRelation;
+@property (nonatomic, strong) NSArray *friends;
 
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1513CC0518A2AC6700509484 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1513CC0418A2AC6700509484 /* TPKeyboardAvoidingScrollView.m */; };
+		1525D60B18A2EFFB0057062B /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525D60818A2EFFB0057062B /* MSCellAccessory.m */; };
+		1525D60C18A2EFFB0057062B /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525D60A18A2EFFB0057062B /* UIView+AccessViewController.m */; };
+		1525D60F18A2FDA70057062B /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1525D60E18A2FDA70057062B /* GravatarUrlBuilder.m */; };
+		1577317818A0787F0072A8DC /* AJImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1577317718A0787F0072A8DC /* AJImageViewController.m */; };
+		1577317A18A07FB60072A8DC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1577317918A07FB60072A8DC /* MediaPlayer.framework */; };
 		15936521189E0D1800029BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936520189E0D1800029BFD /* Foundation.framework */; };
 		15936523189E0D1800029BFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936522189E0D1800029BFD /* CoreGraphics.framework */; };
 		15936525189E0D1800029BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936524189E0D1800029BFD /* UIKit.framework */; };
@@ -19,6 +25,23 @@
 		1593653C189E0D1900029BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936524189E0D1800029BFD /* UIKit.framework */; };
 		15936544189E0D1900029BFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15936542189E0D1900029BFD /* InfoPlist.strings */; };
 		15936546189E0D1900029BFD /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15936545189E0D1900029BFD /* RibbitTests.m */; };
+		15936550189E0D3E00029BFD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1593654F189E0D3E00029BFD /* MainStoryboard.storyboard */; };
+		15936553189E14FA00029BFD /* AJInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15936552189E14FA00029BFD /* AJInboxViewController.m */; };
+		15936555189E1A1400029BFD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936554189E1A1400029BFD /* Parse.framework */; };
+		1593655F189E1A7B00029BFD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936556189E1A7A00029BFD /* AudioToolbox.framework */; };
+		15936560189E1A7B00029BFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936557189E1A7A00029BFD /* CFNetwork.framework */; };
+		15936561189E1A7B00029BFD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936558189E1A7A00029BFD /* CoreLocation.framework */; };
+		15936562189E1A7B00029BFD /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 15936559189E1A7B00029BFD /* libz.1.1.3.dylib */; };
+		15936563189E1A7B00029BFD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1593655A189E1A7B00029BFD /* MobileCoreServices.framework */; };
+		15936564189E1A7B00029BFD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1593655B189E1A7B00029BFD /* QuartzCore.framework */; };
+		15936565189E1A7B00029BFD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1593655C189E1A7B00029BFD /* Security.framework */; };
+		15936566189E1A7B00029BFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1593655D189E1A7B00029BFD /* StoreKit.framework */; };
+		15936567189E1A7B00029BFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1593655E189E1A7B00029BFD /* SystemConfiguration.framework */; };
+		1593656A189E1CE400029BFD /* AJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15936569189E1CE400029BFD /* AJLoginViewController.m */; };
+		1593656D189E1CF700029BFD /* AJSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1593656C189E1CF700029BFD /* AJSignupViewController.m */; };
+		15936570189E283700029BFD /* AJEditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1593656F189E283700029BFD /* AJEditFriendsViewController.m */; };
+		15936573189E2D4D00029BFD /* AJFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15936572189E2D4D00029BFD /* AJFriendsViewController.m */; };
+		15984ECD18A01B57004753C5 /* AJCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15984ECC18A01B57004753C5 /* AJCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +55,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1513CC0318A2AC6700509484 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		1513CC0418A2AC6700509484 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		1525D60718A2EFFB0057062B /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		1525D60818A2EFFB0057062B /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		1525D60918A2EFFB0057062B /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		1525D60A18A2EFFB0057062B /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+		1525D60D18A2FDA60057062B /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravatarUrlBuilder.h; path = MSCellAccessory/GravatarUrlBuilder.h; sourceTree = "<group>"; };
+		1525D60E18A2FDA70057062B /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravatarUrlBuilder.m; path = MSCellAccessory/GravatarUrlBuilder.m; sourceTree = "<group>"; };
+		1577317618A0787F0072A8DC /* AJImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJImageViewController.h; sourceTree = "<group>"; };
+		1577317718A0787F0072A8DC /* AJImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJImageViewController.m; sourceTree = "<group>"; };
+		1577317918A07FB60072A8DC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1593651D189E0D1800029BFD /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15936520189E0D1800029BFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15936522189E0D1800029BFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +82,29 @@
 		15936541189E0D1900029BFD /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
 		15936543189E0D1900029BFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		15936545189E0D1900029BFD /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
+		1593654F189E0D3E00029BFD /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		15936551189E14FA00029BFD /* AJInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJInboxViewController.h; sourceTree = "<group>"; };
+		15936552189E14FA00029BFD /* AJInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJInboxViewController.m; sourceTree = "<group>"; };
+		15936554189E1A1400029BFD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		15936556189E1A7A00029BFD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		15936557189E1A7A00029BFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		15936558189E1A7A00029BFD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		15936559189E1A7B00029BFD /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		1593655A189E1A7B00029BFD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1593655B189E1A7B00029BFD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1593655C189E1A7B00029BFD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1593655D189E1A7B00029BFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1593655E189E1A7B00029BFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		15936568189E1CE400029BFD /* AJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJLoginViewController.h; sourceTree = "<group>"; };
+		15936569189E1CE400029BFD /* AJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJLoginViewController.m; sourceTree = "<group>"; };
+		1593656B189E1CF700029BFD /* AJSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSignupViewController.h; sourceTree = "<group>"; };
+		1593656C189E1CF700029BFD /* AJSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSignupViewController.m; sourceTree = "<group>"; };
+		1593656E189E283700029BFD /* AJEditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJEditFriendsViewController.h; sourceTree = "<group>"; };
+		1593656F189E283700029BFD /* AJEditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJEditFriendsViewController.m; sourceTree = "<group>"; };
+		15936571189E2D4D00029BFD /* AJFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJFriendsViewController.h; sourceTree = "<group>"; };
+		15936572189E2D4D00029BFD /* AJFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJFriendsViewController.m; sourceTree = "<group>"; };
+		15984ECB18A01B57004753C5 /* AJCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJCameraViewController.h; sourceTree = "<group>"; };
+		15984ECC18A01B57004753C5 /* AJCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJCameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +112,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1577317A18A07FB60072A8DC /* MediaPlayer.framework in Frameworks */,
+				1593655F189E1A7B00029BFD /* AudioToolbox.framework in Frameworks */,
+				15936560189E1A7B00029BFD /* CFNetwork.framework in Frameworks */,
+				15936561189E1A7B00029BFD /* CoreLocation.framework in Frameworks */,
+				15936562189E1A7B00029BFD /* libz.1.1.3.dylib in Frameworks */,
+				15936563189E1A7B00029BFD /* MobileCoreServices.framework in Frameworks */,
+				15936564189E1A7B00029BFD /* QuartzCore.framework in Frameworks */,
+				15936565189E1A7B00029BFD /* Security.framework in Frameworks */,
+				15936566189E1A7B00029BFD /* StoreKit.framework in Frameworks */,
+				15936567189E1A7B00029BFD /* SystemConfiguration.framework in Frameworks */,
 				15936523189E0D1800029BFD /* CoreGraphics.framework in Frameworks */,
 				15936525189E0D1800029BFD /* UIKit.framework in Frameworks */,
+				15936555189E1A1400029BFD /* Parse.framework in Frameworks */,
 				15936521189E0D1800029BFD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +142,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1525D60618A2EFFB0057062B /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				1525D60718A2EFFB0057062B /* MSCellAccessory.h */,
+				1525D60818A2EFFB0057062B /* MSCellAccessory.m */,
+				1525D60918A2EFFB0057062B /* UIView+AccessViewController.h */,
+				1525D60A18A2EFFB0057062B /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
+			sourceTree = "<group>";
+		};
 		15936514189E0D1800029BFD = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +175,17 @@
 		1593651F189E0D1800029BFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1577317918A07FB60072A8DC /* MediaPlayer.framework */,
+				15936556189E1A7A00029BFD /* AudioToolbox.framework */,
+				15936557189E1A7A00029BFD /* CFNetwork.framework */,
+				15936558189E1A7A00029BFD /* CoreLocation.framework */,
+				15936559189E1A7B00029BFD /* libz.1.1.3.dylib */,
+				1593655A189E1A7B00029BFD /* MobileCoreServices.framework */,
+				1593655B189E1A7B00029BFD /* QuartzCore.framework */,
+				1593655C189E1A7B00029BFD /* Security.framework */,
+				1593655D189E1A7B00029BFD /* StoreKit.framework */,
+				1593655E189E1A7B00029BFD /* SystemConfiguration.framework */,
+				15936554189E1A1400029BFD /* Parse.framework */,
 				15936520189E0D1800029BFD /* Foundation.framework */,
 				15936522189E0D1800029BFD /* CoreGraphics.framework */,
 				15936524189E0D1800029BFD /* UIKit.framework */,
@@ -109,8 +199,28 @@
 			children = (
 				1593652F189E0D1800029BFD /* AJAppDelegate.h */,
 				15936530189E0D1800029BFD /* AJAppDelegate.m */,
+				15984ECB18A01B57004753C5 /* AJCameraViewController.h */,
+				15984ECC18A01B57004753C5 /* AJCameraViewController.m */,
+				1593656E189E283700029BFD /* AJEditFriendsViewController.h */,
+				1593656F189E283700029BFD /* AJEditFriendsViewController.m */,
+				15936571189E2D4D00029BFD /* AJFriendsViewController.h */,
+				15936572189E2D4D00029BFD /* AJFriendsViewController.m */,
+				1577317618A0787F0072A8DC /* AJImageViewController.h */,
+				1577317718A0787F0072A8DC /* AJImageViewController.m */,
+				15936551189E14FA00029BFD /* AJInboxViewController.h */,
+				15936552189E14FA00029BFD /* AJInboxViewController.m */,
+				15936568189E1CE400029BFD /* AJLoginViewController.h */,
+				15936569189E1CE400029BFD /* AJLoginViewController.m */,
+				1593656B189E1CF700029BFD /* AJSignupViewController.h */,
+				1593656C189E1CF700029BFD /* AJSignupViewController.m */,
+				1525D60D18A2FDA60057062B /* GravatarUrlBuilder.h */,
+				1525D60E18A2FDA70057062B /* GravatarUrlBuilder.m */,
 				15936532189E0D1800029BFD /* Images.xcassets */,
+				1593654F189E0D3E00029BFD /* MainStoryboard.storyboard */,
+				1525D60618A2EFFB0057062B /* MSCellAccessory */,
 				15936527189E0D1800029BFD /* Supporting Files */,
+				1513CC0318A2AC6700509484 /* TPKeyboardAvoidingScrollView.h */,
+				1513CC0418A2AC6700509484 /* TPKeyboardAvoidingScrollView.m */,
 			);
 			path = Ribbit;
 			sourceTree = "<group>";
@@ -220,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15936550189E0D3E00029BFD /* MainStoryboard.storyboard in Resources */,
 				1593652B189E0D1800029BFD /* InfoPlist.strings in Resources */,
 				15936533189E0D1800029BFD /* Images.xcassets in Resources */,
 			);
@@ -240,8 +351,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1593656D189E1CF700029BFD /* AJSignupViewController.m in Sources */,
+				1513CC0518A2AC6700509484 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				1593652D189E0D1800029BFD /* main.m in Sources */,
+				1593656A189E1CE400029BFD /* AJLoginViewController.m in Sources */,
+				1525D60F18A2FDA70057062B /* GravatarUrlBuilder.m in Sources */,
 				15936531189E0D1800029BFD /* AJAppDelegate.m in Sources */,
+				15936553189E14FA00029BFD /* AJInboxViewController.m in Sources */,
+				1525D60B18A2EFFB0057062B /* MSCellAccessory.m in Sources */,
+				15936570189E283700029BFD /* AJEditFriendsViewController.m in Sources */,
+				15984ECD18A01B57004753C5 /* AJCameraViewController.m in Sources */,
+				1525D60C18A2EFFB0057062B /* UIView+AccessViewController.m in Sources */,
+				15936573189E2D4D00029BFD /* AJFriendsViewController.m in Sources */,
+				1577317818A0787F0072A8DC /* AJImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/albertojauregui/Developer/Ribbit,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
@@ -373,6 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/albertojauregui/Developer/Ribbit,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ribbit/Ribbit-Prefix.pch";
 				INFOPLIST_FILE = "Ribbit/Ribbit-Info.plist";
@@ -442,6 +572,7 @@
 				1593654B189E0D1900029BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1593654C189E0D1900029BFD /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +581,7 @@
 				1593654E189E0D1900029BFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "AJInboxViewController.h"
+#import "AJImageViewController.h"
+#import "MSCellAccessory.h"
 
 @interface AJInboxViewController ()
 
@@ -14,46 +16,41 @@
 
 @implementation AJInboxViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.moviePlayer = [[MPMoviePlayerController alloc] init];
+    
+    PFUser *currentUser = [PFUser currentUser];
+    if(currentUser){
+        
+    }else{
+        [self performSegueWithIdentifier:@"showLogin" sender:self];
+    }
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(retrieveMessages) forControlEvents:UIControlEventValueChanged];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar setHidden:NO];
+    
+    [self retrieveMessages];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.messages count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,60 +58,90 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    PFObject *message = [self.messages objectAtIndex:indexPath.row];
+    cell.textLabel.text = [message objectForKey:@"senderName"];
+    
+    UIColor *disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
+    cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_DISCLOSURE_INDICATOR color:disclosureColor];
+
+    NSString *fileType = [message objectForKey:@"fileType"];
+    if([fileType isEqualToString:@"image"]){
+        cell.imageView.image = [UIImage imageNamed:@"icon_image"];
+    }else{
+        cell.imageView.image = [UIImage imageNamed:@"icon_video"];
+    }
     
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma marks - Table view delegate
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedMessage = [self.messages objectAtIndex:indexPath.row];
+    NSString *fileType = [self.selectedMessage objectForKey:@"fileType"];
+    if([fileType isEqualToString:@"image"]){
+        [self performSegueWithIdentifier:@"showImage" sender:self];
+    }else{
+        PFFile *videoFile = [self.selectedMessage objectForKey:@"file"];
+        NSURL *fileUrl = [NSURL URLWithString:videoFile.url];
+        self.moviePlayer.contentURL = fileUrl;
+        [self.moviePlayer prepareToPlay];
+        //[self.moviePlayer thumbnailImageAtTime:0 timeOption:MPMovieTimeOptionNearestKeyFrame]; // Deprecated in iOS 7
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        // Add it to the view controller so we can see it
+        [self.view addSubview:self.moviePlayer.view];
+        [self.moviePlayer setFullscreen:YES animated:YES];
+    }
+    
+    // Delete it!
+    NSMutableArray *recipientIds = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recipientIds"]];
+    
+    if([recipientIds count] == 1){
+        // Last recipient - delete!
+        [self.selectedMessage deleteInBackground];
+    }else{
+        // Remove the recipient and save it
+        [recipientIds removeObject:[[PFUser currentUser] objectId]];
+        [self.selectedMessage setObject:recipientIds forKey:@"recipientIds"];
+        [self.selectedMessage saveInBackground];
+    }
 }
 
- */
+#pragma marks - IBActions
+
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"showLogin" sender:self];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if( [segue.identifier isEqualToString:@"showLogin"] ){
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    }else if([segue.identifier isEqualToString:@"showImage"]){
+        AJImageViewController *imageViewController = (AJImageViewController *) segue.destinationViewController;
+        imageViewController.message = self.selectedMessage;
+    }
+}
+
+#pragma mark - Helper methods
+
+- (void)retrieveMessages {
+    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
+    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if(error){
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }else{
+            // We found messages!
+            self.messages = objects;
+            [self.tableView reloadData];
+        }
+        
+        if([self.refreshControl isRefreshing]){
+            [self.refreshControl endRefreshing];
+        }
+    }];
+}
 
 @end
